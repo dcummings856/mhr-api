@@ -286,6 +286,6 @@ app.get('/api/monsters/:monster', (req, res) => {
   res.json(monsters[monsterInfo])
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on ${PORT}`)
 })
