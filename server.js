@@ -38,15 +38,17 @@ let monsters = {
     'monster-class': 'Fanged Beast',
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
-    'weakness': 'unknown',
-    'habitat': 'Shrine Ruins',
+    'weakness': ['Fire(Primary)', 'Ice/Lightning(Secondary)'],
+    'vulernable-spots': ['Head', 'Rear', 'Upper Half'],
+    'habitat': ['Shrine Ruins', 'Flooded Forest']
   },
   'barioth': {
     'name': 'Barioth',
     'monster-class': 'Flying Wyvern',
     'elements': 'Ice',
     'ailments': ['Iceblight', 'Snowman'],
-    'weakness': ['Fire', 'Thunder'],
+    'weakness': ['Fire(Primary)', 'Thunder(Secondary)'],
+    'vulernable-spots': ['Head', 'Tail Tip'],
     'habitat': 'Frost Islands',
   },
   'barroth': {
@@ -54,7 +56,8 @@ let monsters = {
     'monster-class': 'Brute Wyvern',
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
-    'weakness': ['Water', 'Fire', 'Ice'],
+    'weakness': ['Fire(Primary)', 'Ice(Secondary)'],
+    'vulernable-spots': ['Foreleg', 'Tail'],
     'habitat': 'Sandy Plains',
   },
   'basarios': {
