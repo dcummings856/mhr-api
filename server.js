@@ -8,61 +8,61 @@ app.use(cors())
 let monsters = {
   'aknosom': {
     'name':'Aknosom',
-    'monster-class': 'Bird Wyvern',
+    'type': 'Bird Wyvern',
     'elements': 'Fire',
     'ailments': 'Fireblight',
     'weakness': ['Water(Primary)', 'Lightning(Secondary)'],
-    'vulernable-spots': ['Head', 'Crest', 'Wing'],
+    'weakspots': ['Head', 'Crest', 'Wing'],
     'habitat': ['Shrine Ruins', 'Frost Islands'],
   },
   'almudron': {
     'name': 'Almudron',
-    'monster-class': 'Leviathan',
+    'type': 'Leviathan',
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
     'weakness': ['Fire(Primary)', 'Ice(Secondary)'],
-    'vulernable-spots': ['Tail Tip', 'Tail', 'Head'],
+    'weakspots': ['Tail Tip', 'Tail', 'Head'],
     'habitat': ['Shrine Ruins', 'Sandy Plains', 'Flooded Forest'],
   },
   'anjanath': {
     'name': 'Anjanath',
-    'monster-class': 'Brute Wyvern',
+    'type': 'Brute Wyvern',
     'elements': 'Fire',
     'ailments': 'Fireblight',
     'weakness': ['Water(Primary)', 'Ice(Secondary)'],
-    'vulernable-spots': ['Head', 'Tail'],
+    'weakspots': ['Head', 'Tail'],
     'habitat': ['Shrine Ruins', 'Sandy Plains', 'Flooded Forest', 'Lava Caverns'],
   },
   'azuros': {
     'name': 'Azuros',
-    'monster-class': 'Fanged Beast',
+    'type': 'Fanged Beast',
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
     'weakness': ['Fire(Primary)', 'Ice/Lightning(Secondary)'],
-    'vulernable-spots': ['Head', 'Rear', 'Upper Half'],
+    'weakspots': ['Head', 'Rear', 'Upper Half'],
     'habitat': ['Shrine Ruins', 'Flooded Forest']
   },
   'barioth': {
     'name': 'Barioth',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': 'Ice',
     'ailments': ['Iceblight', 'Snowman'],
     'weakness': ['Fire(Primary)', 'Thunder(Secondary)'],
-    'vulernable-spots': ['Head', 'Tail Tip'],
+    'weakspots': ['Head', 'Tail Tip'],
     'habitat': 'Frost Islands',
   },
   'barroth': {
     'name': 'Barroth',
-    'monster-class': 'Brute Wyvern',
+    'type': 'Brute Wyvern',
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
     'weakness': ['Fire(Primary)', 'Ice(Secondary)'],
-    'vulernable-spots': ['Foreleg', 'Tail'],
+    'weakspots': ['Foreleg', 'Tail'],
     'habitat': 'Sandy Plains',
   },
   'basarios': {
     'name': 'Basarios',
-    'monster-class': 'Rock Wyvern',
+    'type': 'Rock Wyvern',
     'elements': 'Fire',
     'ailments': ['Poison', 'Noxious Poison', 'Sleep'],
     'weakness': ['Dragon', 'Water'],
@@ -70,7 +70,7 @@ let monsters = {
   },
   'bishaten': {
     'name': 'Bishaten',
-    'monster-class': 'Fanged Beast',
+    'type': 'Fanged Beast',
     'elements': 'None',
     'ailments': ['Poison', 'Stun'],
     'weakness': 'unknown',
@@ -78,7 +78,7 @@ let monsters = {
   },
   'chameleos': {
     'name':'Chameleos',
-    'monster-class': 'Elder Dragon',
+    'type': 'Elder Dragon',
     'elements': 'Dragon',
     'ailments': 'Poison',
     'weakness': 'Dragon',
@@ -86,7 +86,7 @@ let monsters = {
   },
   'diablos': {
     'name':'Diablos',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': 'None',
     'ailments': 'None',
     'weakness': 'Ice',
@@ -94,7 +94,7 @@ let monsters = {
   },
   'goss harag': {
     'name':'Goss Harag',
-    'monster-class': 'Fanged Beast',
+    'type': 'Fanged Beast',
     'elements': 'Ice',
     'ailments': 'Iceblight',
     'weakness': 'unknown',
@@ -102,7 +102,7 @@ let monsters = {
   },
   'great baggi': {
     'name':'Great Baggi',
-    'monster-class': 'Bird Wyvern',
+    'type': 'Bird Wyvern',
     'elements': 'Ice',
     'ailments': 'Sleep',
     'weakness': 'Fire',
@@ -110,7 +110,7 @@ let monsters = {
   },
   'great izuchi': {
     'name':'Great Izuchi',
-    'monster-class': 'Bird Wyvern',
+    'type': 'Bird Wyvern',
     'elements': 'None',
     'ailments': 'None',
     'weakness': 'unknown',
@@ -118,7 +118,7 @@ let monsters = {
   },
   'great wroggi': {
     'name':'Great Wroggi',
-    'monster-class': 'Bird Wyvern',
+    'type': 'Bird Wyvern',
     'elements': 'Fire',
     'ailments': 'Poison',
     'weakness': 'Ice',
@@ -126,7 +126,7 @@ let monsters = {
   },
   'jyuratodus': {
     'name':'Jyuratodus',
-    'monster-class': 'Mud Fish Wyvern',
+    'type': 'Mud Fish Wyvern',
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
     'weakness': ['Thunder', 'Water'],
@@ -134,7 +134,7 @@ let monsters = {
   },
   'khezu': {
     'name':'',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': 'Thunder',
     'ailments': ['Thunderblight', 'Paralysis', 'Stun'],
     'weakness': 'Fire',
@@ -142,7 +142,7 @@ let monsters = {
   },
   'kulu-ya-ku': {
     'name':'Kulu-Ya-Ku',
-    'monster-class': 'Bird Wyvern',
+    'type': 'Bird Wyvern',
     'elements': 'None',
     'ailments': ['Stun', 'Fireblight'],
     'weakness': 'Water',
@@ -150,7 +150,7 @@ let monsters = {
   },
   'lagombi': {
     'name':'Lagombi',
-    'monster-class': 'Fanged Beast',
+    'type': 'Fanged Beast',
     'elements': 'Ice',
     'ailments': ['Iceblight', 'Snowman'],
     'weakness': ['Fire', 'Thunder'],
@@ -158,7 +158,7 @@ let monsters = {
   },
   'magnamalo': {
     'name':'Magnamalo',
-    'monster-class': 'Fanged Wyvern',
+    'type': 'Fanged Wyvern',
     'elements': 'None',
     'ailments': 'Hellfireblight',
     'weakness': 'unknown',
@@ -166,7 +166,7 @@ let monsters = {
   },
   'mizutsune': {
     'name':'Mitzutsune',
-    'monster-class': 'Leviathan',
+    'type': 'Leviathan',
     'elements': 'Water',
     'ailments': ['Bubble', 'Waterblight'],
     'weakness': ['Thunder', 'Dragon'],
@@ -174,7 +174,7 @@ let monsters = {
   },
   'nargacuga': {
     'name':'Nargacuga',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': 'Water',
     'ailments': 'Bleeding',
     'weakness': ['Thunder', 'Fire'],
@@ -182,7 +182,7 @@ let monsters = {
   },
   'pukei-pukei': {
     'name':'Pukei-Pukei',
-    'monster-class': 'Bird Wyvern',
+    'type': 'Bird Wyvern',
     'elements': 'None',
     'ailments': ['Poison', 'Stun'],
     'weakness': 'Tunder',
@@ -190,7 +190,7 @@ let monsters = {
   },
   'rajang': {
     'name':'Rajang',
-    'monster-class': 'Fanged Beast',
+    'type': 'Fanged Beast',
     'elements': 'Thunder',
     'ailments': 'Thunderblight',
     'weakness': 'Ice',
@@ -198,7 +198,7 @@ let monsters = {
   },
   'rakna-kadaki': {
     'name':'Rakna-Kadaki',
-    'monster-class': 'Temnoceran',
+    'type': 'Temnoceran',
     'elements': 'Fire',
     'ailments': ['Fireblight', 'Webbed'],
     'weakness': 'unknown',
@@ -206,7 +206,7 @@ let monsters = {
   },
   'somnacanth': {
     'name':'Somnacanth',
-    'monster-class': 'Leviathan',
+    'type': 'Leviathan',
     'elements': 'None',
     'ailments': ['Sleep', 'Stun', 'Blastblight'],
     'weakness': 'unknown',
@@ -214,7 +214,7 @@ let monsters = {
   },
   'tetranadon': {
     'name':'Tetranadon',
-    'monster-class': 'Amphibian',
+    'type': 'Amphibian',
     'elements': 'Water',
     'ailments': 'Waterblight',
     'weakness': 'unknown',
@@ -222,7 +222,7 @@ let monsters = {
   },
   'tigrex': {
     'name':'Tigrex',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': ['Fire', 'Water', 'Ice'],
     'ailments': ['Snowman', 'Fireblight', 'Waterblight', 'Iceblight', 'Effluvium'],
     'weakness': ['Thunder', 'Dragon'],
@@ -230,7 +230,7 @@ let monsters = {
   },
   'rathalos': {
     'name':'Rathalos',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': 'Fire',
     'ailments': ['Fireblight', 'Stun', 'Poison'],
     'weakness': ['Dragon', 'Thunder'],
@@ -238,7 +238,7 @@ let monsters = {
   },
   'rathian': {
     'name':'Rathian',
-    'monster-class': 'Flying Wyvern',
+    'type': 'Flying Wyvern',
     'elements': 'Fire',
     'ailments': ['Fireblight', 'Stun', 'Poison'],
     'weakness': ['Dragon', 'Thunder'],
@@ -246,7 +246,7 @@ let monsters = {
   },
   'royal ludroth': {
     'name':'Royal Ludroth',
-    'monster-class': 'Leviathan',
+    'type': 'Leviathan',
     'elements': 'Water',
     'ailments': 'Waterblight',
     'weakness': ['Fire', 'Thunder'],
@@ -254,7 +254,7 @@ let monsters = {
   },
   'tobi-kadachi': {
     'name':'Tobi-Kadachi',
-    'monster-class': 'Fanged Wyvern',
+    'type': 'Fanged Wyvern',
     'elements': 'Thunder',
     'ailments': 'Thunderblight',
     'weakness': 'Water',
@@ -262,7 +262,7 @@ let monsters = {
   },
   'volvidon': {
     'name':'Volvidon',
-    'monster-class': 'Fanged Beast',
+    'type': 'Fanged Beast',
     'elements': 'Thunder',
     'ailments': ['Paralysis', 'Soiled'],
     'weakness': ['Water', 'Earth'],
@@ -270,7 +270,7 @@ let monsters = {
   },
   'zinogre': {
     'name':'Zinogre',
-    'monster-class': 'Fanged Wyvern',
+    'type': 'Fanged Wyvern',
     'elements': 'Thunder',
     'ailments': ['Thunderblight', 'Paralysis'],
     'weakness': ['Ice', 'Earth'],
