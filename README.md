@@ -1,0 +1,1 @@
+API for Monster Hunter Rise monster information
