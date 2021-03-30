@@ -66,6 +66,7 @@ let monsters = {
     'elements': 'Fire',
     'ailments': ['Poison', 'Noxious Poison', 'Sleep'],
     'weakness': ['Dragon', 'Water'],
+    'weakspots': ['Foreleg', 'Tail'],
     'habitat': ['Sandy Plains', 'Lava Caverns'],
   },
   'bishaten': {
@@ -73,7 +74,8 @@ let monsters = {
     'type': 'Fanged Beast',
     'elements': 'None',
     'ailments': ['Poison', 'Stun'],
-    'weakness': 'unknown',
+    'weakness': ['Ice(Primary)', 'Fire(Secondary)'],
+    'weakspots': ['Head', 'Tail'],
     'habitat': ['Shrine Ruins', 'Flooded Forest'],
   },
   'chameleos': {
