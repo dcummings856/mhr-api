@@ -65,8 +65,8 @@ let monsters = {
     'type': 'Rock Wyvern',
     'elements': 'Fire',
     'ailments': ['Poison', 'Noxious Poison', 'Sleep'],
-    'weakness': ['Dragon', 'Water'],
-    'weakspots': ['Foreleg', 'Tail'],
+    'weakness': ['Water(Primary)', 'Dragon(Secondary)'],
+    'weakspots': ['Chest', 'Back', 'Tail'],
     'habitat': ['Sandy Plains', 'Lava Caverns'],
   },
   'bishaten': {
@@ -84,6 +84,7 @@ let monsters = {
     'elements': 'Dragon',
     'ailments': 'Poison',
     'weakness': 'Dragon',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Shrine Ruins',
   },
   'diablos': {
@@ -91,7 +92,8 @@ let monsters = {
     'type': 'Flying Wyvern',
     'elements': 'None',
     'ailments': 'None',
-    'weakness': 'Ice',
+    'weakness': ['Ice(Primary)', 'Water(Secondary)', 'Dragon(Secondary)'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Sandy Plains',
   },
   'goss harag': {
@@ -100,6 +102,7 @@ let monsters = {
     'elements': 'Ice',
     'ailments': 'Iceblight',
     'weakness': 'unknown',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Frost Islands',
   },
   'great baggi': {
@@ -108,6 +111,7 @@ let monsters = {
     'elements': 'Ice',
     'ailments': 'Sleep',
     'weakness': 'Fire',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Frost Islands',
   },
   'great izuchi': {
@@ -116,6 +120,7 @@ let monsters = {
     'elements': 'None',
     'ailments': 'None',
     'weakness': 'unknown',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Frost Islands'],
   },
   'great wroggi': {
@@ -124,6 +129,7 @@ let monsters = {
     'elements': 'Fire',
     'ailments': 'Poison',
     'weakness': 'Ice',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Shrine Ruins',
   },
   'jyuratodus': {
@@ -132,6 +138,7 @@ let monsters = {
     'elements': 'Water',
     'ailments': ['Waterblight', 'Muddy'],
     'weakness': ['Thunder', 'Water'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Flooded Forest',
   },
   'khezu': {
@@ -140,6 +147,7 @@ let monsters = {
     'elements': 'Thunder',
     'ailments': ['Thunderblight', 'Paralysis', 'Stun'],
     'weakness': 'Fire',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Frost Islands',
   },
   'kulu-ya-ku': {
@@ -148,6 +156,7 @@ let monsters = {
     'elements': 'None',
     'ailments': ['Stun', 'Fireblight'],
     'weakness': 'Water',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Frost Islands', 'Sandy Plains', 'Lava Caverns'],
   },
   'lagombi': {
@@ -156,6 +165,7 @@ let monsters = {
     'elements': 'Ice',
     'ailments': ['Iceblight', 'Snowman'],
     'weakness': ['Fire', 'Thunder'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Frost Islands',
   },
   'magnamalo': {
@@ -164,6 +174,7 @@ let monsters = {
     'elements': 'None',
     'ailments': 'Hellfireblight',
     'weakness': 'unknown',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Lava Caverns'],
   },
   'mizutsune': {
@@ -172,6 +183,7 @@ let monsters = {
     'elements': 'Water',
     'ailments': ['Bubble', 'Waterblight'],
     'weakness': ['Thunder', 'Dragon'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Frost Islands', 'Flooded Forest'],
   },
   'nargacuga': {
@@ -180,6 +192,7 @@ let monsters = {
     'elements': 'Water',
     'ailments': 'Bleeding',
     'weakness': ['Thunder', 'Fire'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Shrine Ruins',
   },
   'pukei-pukei': {
@@ -188,6 +201,7 @@ let monsters = {
     'elements': 'None',
     'ailments': ['Poison', 'Stun'],
     'weakness': 'Tunder',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Flooded Forest', 'Sandy Plains'],
   },
   'rajang': {
@@ -196,6 +210,7 @@ let monsters = {
     'elements': 'Thunder',
     'ailments': 'Thunderblight',
     'weakness': 'Ice',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Flooded Forest', 'Sandy Plains', 'Lava Caverns'],
   },
   'rakna-kadaki': {
@@ -204,6 +219,7 @@ let monsters = {
     'elements': 'Fire',
     'ailments': ['Fireblight', 'Webbed'],
     'weakness': 'unknown',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Sandy Plains', 'Lava Caverns'],
   },
   'somnacanth': {
@@ -212,6 +228,7 @@ let monsters = {
     'elements': 'None',
     'ailments': ['Sleep', 'Stun', 'Blastblight'],
     'weakness': 'unknown',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Flooded Forest', 'Frost Islands'],
   },
   'tetranadon': {
@@ -220,6 +237,7 @@ let monsters = {
     'elements': 'Water',
     'ailments': 'Waterblight',
     'weakness': 'unknown',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Frost Islands'],
   },
   'tigrex': {
@@ -228,6 +246,7 @@ let monsters = {
     'elements': ['Fire', 'Water', 'Ice'],
     'ailments': ['Snowman', 'Fireblight', 'Waterblight', 'Iceblight', 'Effluvium'],
     'weakness': ['Thunder', 'Dragon'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Frost Islands',
   },
   'rathalos': {
@@ -236,6 +255,7 @@ let monsters = {
     'elements': 'Fire',
     'ailments': ['Fireblight', 'Stun', 'Poison'],
     'weakness': ['Dragon', 'Thunder'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Lava Caverns'],
   },
   'rathian': {
@@ -244,6 +264,7 @@ let monsters = {
     'elements': 'Fire',
     'ailments': ['Fireblight', 'Stun', 'Poison'],
     'weakness': ['Dragon', 'Thunder'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Sandy Plains', 'Lava Caverns'],
   },
   'royal ludroth': {
@@ -252,6 +273,7 @@ let monsters = {
     'elements': 'Water',
     'ailments': 'Waterblight',
     'weakness': ['Fire', 'Thunder'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Flooded Forest', 'Lava Caverns'],
   },
   'tobi-kadachi': {
@@ -260,6 +282,7 @@ let monsters = {
     'elements': 'Thunder',
     'ailments': 'Thunderblight',
     'weakness': 'Water',
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Flooded Forest'],
   },
   'volvidon': {
@@ -268,6 +291,7 @@ let monsters = {
     'elements': 'Thunder',
     'ailments': ['Paralysis', 'Soiled'],
     'weakness': ['Water', 'Earth'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': 'Lava Caverns',
   },
   'zinogre': {
@@ -276,6 +300,7 @@ let monsters = {
     'elements': 'Thunder',
     'ailments': ['Thunderblight', 'Paralysis'],
     'weakness': ['Ice', 'Earth'],
+    'weakspots': ['Head', 'Hind Legs'],
     'habitat': ['Shrine Ruins', 'Flooded Forest'],
   },
 }
